@@ -1,8 +1,14 @@
-<div class="container">
+<div class="form">
   <%= simple_form_for @message do |f| %>
-    <%= f.input :name %>
-    <%= f.input :telephone %>
-    <%= f.input :word %>
-    <%= f.submit %>
+    <div class="new-flex">
+      <div>
+        <%= f.input :name, placeholder: "Nom", label: false %>
+      </div>
+      <div>
+        <%= f.input :telephone, placeholder: "Téléphone", label: false %>
+      </div>
+    </div>
+    <%= f.input :word, placeholder: "Message", label: false %>
+    <%= f.submit "Envoyer" %>
   <% end %>
 </div>

@@ -1,1 +1,32 @@
 // Specific CSS for your home-page
+
+.white-background {
+  background-color: white;
+  margin-bottom: 20px;
+  // position: sticky;
+  // top: 0;
+}
+.centered-element {
+  text-align: center;
+  img {
+    height: 140px;
+  }
+}
+
+.menu-navbar {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: rgb(112, 109, 109);
+    }
+  }
+}
+
+.home-body {
+  text-align: center;
+}

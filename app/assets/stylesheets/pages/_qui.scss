@@ -1,3 +1,21 @@
+.quipage {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+.small-logo img {
+  height: 140px;
+}
+
+.centered-item-50 {
+  padding-top: 50px;
+}
+
+.centered-item-40 {
+  padding-top: 40px;
+}
+
 .presentation {
   display: flex;
   gap: 20px;

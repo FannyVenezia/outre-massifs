@@ -1,25 +1,15 @@
 class PagesController < ApplicationController
-  def home
-  end
+  def home; end
 
-  def qui
-  end
+  def qui; end
 
-  def rando
-  end
+  def rando; end
 
-  def animation
-  end
+  def animation; end
 
-  def nature
-  end
+  def nature; end
 
-  def photos
-  end
+  def photos; end
 
-  def tarifs
-  end
-
-  def contact
-  end
+  def tarifs; end
 end

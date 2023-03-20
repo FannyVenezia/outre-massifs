@@ -1,15 +1,30 @@
 <div class="white-background">
   <div class="quipage">
-    <p>Simon CAILLEAU</p>
-    <p>06.32.65.25.12</p>
+    <div class="centered-item-50">
+      <p>Simon CAILLEAU</p>
+      <p>06.32.65.25.12</p>
+    </div>
 
-    <%= link_to root_path do %>
-      <%= image_tag "logo.png" %>
-    <% end %>
+    <div class="small-logo">
+      <%= link_to root_path do %>
+        <%= image_tag "logo.png" %>
+      <% end %>
+    </div>
 
-    <%= image_tag "https://icones8.fr/icon/67554/facebook" %>
-    <%= image_tag "https://icones8.fr/icon/Xy10Jcu1L2Su/instagram" %>
+    <div class="centered-item-40">
+      <div>
+        <%= link_to root_path do %>
+          <%= image_tag "facebook.png" %>
+        <% end %>
+      </div>
+      <div>
+        <%= link_to root_path do %>
+          <%= image_tag "instagram.png" %>
+        <% end %>
+      </div>
+    </div>
   </div>
+
   <div class="menu-navbar">
     <div>
       <%= link_to "Qui suis-je ?", qui_path %>
@@ -17,9 +32,8 @@
     <div>
       <%= link_to "Randonnées", rando_path %>
     </div>
-      <%= link_to "Animation", animation_path %>
     <div>
-      <%= link_to "Nature", nature_path %>
+      <%= link_to "Animation nature", animation_path %>
     </div>
     <div>
       <%= link_to "Photos", photos_path %>
@@ -28,7 +42,7 @@
       <%= link_to "Tarifs et conditions", tarifs_path %>
     </div>
     <div>
-      <%= link_to "Contactez-moi", contact_path %>
+      <%= link_to "Contactez-moi", new_message_path %>
     </div>
   </div>
 </div>

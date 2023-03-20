@@ -4,8 +4,9 @@ Rails.application.routes.draw do
   get 'qui', to: 'pages#qui'
   get 'rando', to: 'pages#rando'
   get 'animation', to: 'pages#animation'
-  get 'nature', to: 'pages#nature'
   get 'photos', to: 'pages#photos'
   get 'tarifs', to: 'pages#tarifs'
   get 'contact', to: 'pages#contact'
+
+  resources :messages, only: [:new, :create]
 end

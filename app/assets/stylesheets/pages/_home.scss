@@ -26,13 +26,13 @@
     text-decoration: none;
     color: black;
     &:hover {
-      border-bottom: solid 4px red;
+      border-bottom: solid 4px rgb(204, 33, 33);
     }
   }
 }
 
 .red-border {
-  border-bottom: solid 4px red;
+  border-bottom: solid 4px rgb(204, 33, 33);
 }
 
 .home-body {

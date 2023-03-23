@@ -1,8 +1,13 @@
-.grid-photos {
+.grid-phot {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
-  margin-left: 6%;
+  grid-gap: 20px;
+  margin-left: 2%;
+  img {
+    border-radius: 8px;
+    height: 400px;
+    width: 400px;
+  }
 }
 
 .text-justify {

@@ -1,3 +1,52 @@
+<div class="white-background">
+  <div class="quipage">
+    <div class="centered-item-50">
+      <p>Simon CAILLEAU</p>
+      <p>06.32.65.25.12</p>
+    </div>
+
+    <div class="small-logo">
+      <%= link_to root_path do %>
+        <%= image_tag "logo.png" %>
+      <% end %>
+    </div>
+
+    <div class="centered-item-40">
+      <div>
+        <%= link_to root_path do %>
+          <%= image_tag "facebook.png" %>
+        <% end %>
+      </div>
+      <div>
+        <%= link_to root_path do %>
+          <%= image_tag "instagram.png" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-navbar">
+    <div>
+      <%= link_to "Qui suis-je ?", qui_path %>
+    </div>
+    <div>
+      <%= link_to "Randonnées", rando_path %>
+    </div>
+    <div class="red-border">
+      <%= link_to "Animation nature", animation_path %>
+    </div>
+    <div>
+      <%= link_to "Photos", photos_path %>
+    </div>
+    <div>
+      <%= link_to "Tarifs et conditions", tarifs_path %>
+    </div>
+    <div>
+      <%= link_to "Contactez-moi", new_message_path %>
+    </div>
+  </div>
+</div>
+
 <div class="container">
   <div class="presentation">
     <div>

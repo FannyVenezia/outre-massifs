@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
 
   resources :messages, only: [:new, :create]
+
+  resources :reservations, only: [:new, :create]
 end

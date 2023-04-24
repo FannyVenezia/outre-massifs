@@ -29,13 +29,13 @@
     <div>
       <%= link_to "Qui suis-je ?", qui_path %>
     </div>
-    <div>
+    <div class="red-border">
       <%= link_to "Randonnées", hikes_path %>
     </div>
     <div>
       <%= link_to "Animation nature", animation_path %>
     </div>
-    <div class="red-border">
+    <div>
       <%= link_to "Photos", photos_path %>
     </div>
     <div>
@@ -47,11 +47,6 @@
   </div>
 </div>
 
-<div>
-  <div class="grid-phot">
-    <%= image_tag "https://images.pexels.com/photos/789555/pexels-photo-789555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %>
-    <%= image_tag "https://images.pexels.com/photos/1480806/pexels-photo-1480806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %>
-    <%= image_tag "https://images.pexels.com/photos/1552932/pexels-photo-1552932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %>
-    <%= image_tag "https://images.pexels.com/photos/2437293/pexels-photo-2437293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %>
-  </div>
-</div>
+<h2>Randonée</h2>
+<%= @hike.title %>
+<%= @hike.description %>

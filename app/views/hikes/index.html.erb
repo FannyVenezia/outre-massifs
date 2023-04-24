@@ -30,7 +30,7 @@
       <%= link_to "Qui suis-je ?", qui_path %>
     </div>
     <div class="red-border">
-      <%= link_to "Randonnées", rando_path %>
+      <%= link_to "Randonnées", hikes_path %>
     </div>
     <div>
       <%= link_to "Animation nature", animation_path %>
@@ -55,34 +55,7 @@ A la journée ou à la demi-journée, sur plusieurs jours en étoile ou en itin�
 ensemble votre randonnée.</p>
 </div>
 
-<div>
-  <div class="grid-photos">
-    <div class="photo-card">
-      <div class="text-card">
-        <h5>Les Alpilles</h5>
-      </div>
-      <%= image_tag "https://images.pexels.com/photos/3451608/pexels-photo-3451608.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %>
-    </div>
-
-    <div class="photo-card">
-      <div class="text-card">
-        <h5>Dentelles de Montmirail</h5>
-      </div>
-      <%= image_tag "https://images.pexels.com/photos/416779/pexels-photo-416779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %>
-    </div>
-
-    <div class="photo-card">
-      <div class="text-card">
-        <h5>Le Luberon</h5>
-      </div>
-      <%= image_tag "https://images.pexels.com/photos/3303728/pexels-photo-3303728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %>
-    </div>
-
-    <div class="photo-card">
-      <div class="text-card">
-        <h5>Initiation au bivouac</h5>
-      </div>
-      <%= image_tag "https://images.pexels.com/photos/3163943/pexels-photo-3163943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %>
-    </div>
-  </div>
-</div>
+<h1>Randonnées</h1>
+<% @hikes.each do |hike| %>
+  <%= link_to hike.title, hike_path(hike) %>
+<% end %>

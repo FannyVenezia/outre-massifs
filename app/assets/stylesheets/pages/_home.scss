@@ -9,6 +9,7 @@
   // margin-bottom: 20px;
   position: sticky;
   top: 0;
+  padding-bottom: 12px;
 }
 .centered-element {
   text-align: center;
@@ -18,21 +19,25 @@
 }
 
 .menu-navbar {
-  margin-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 6px;
+  padding-bottom: 14px;
   display: flex;
   justify-content: space-around;
   a {
     text-decoration: none;
     color: black;
     &:hover {
-      border-bottom: solid 4px rgb(204, 33, 33);
+      border-bottom: solid 4px #1f547a;
     }
   }
 }
 
 .red-border {
   border-bottom: solid 4px rgb(204, 33, 33);
+}
+
+#background-video {
+  height: 760px;
 }
 
 .home-body {
@@ -42,7 +47,7 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 130px 0;
 }
 
 .banner h1 {
@@ -53,10 +58,17 @@
   font-weight: bold;
 }
 
+.banner h3 {
+  font-size: 20px;
+  color: white;
+  // opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
 .banner p {
   font-size: 20px;
   color: white;
-  opacity: .7;
+  // opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
@@ -72,3 +84,20 @@
   background: #4D04C4;
   color: white;
 }
+
+.entry {
+  display: flex;
+  justify-content: space-around;
+}
+
+// #background-video {
+//   height: 100vh;
+//   width: 100vw;
+//   object-fit: cover;
+//   position: fixed;
+//   left: 0;
+//   right: 0;
+//   top: 0;
+//   bottom: 0;
+//   z-index: -1;
+// }

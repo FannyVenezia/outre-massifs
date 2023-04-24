@@ -1,62 +1,44 @@
 <div class="white-background">
   <div class="quipage">
-    <div class="centered-item-50">
-      <p>Simon CAILLEAU</p>
-      <p>06.32.65.25.12</p>
-    </div>
-
-    <div class="small-logo">
+     <div class="small-logo">
       <%= link_to root_path do %>
         <%= image_tag "logo.png" %>
       <% end %>
     </div>
 
-    <div class="centered-item-40">
-      <div>
-        <%= link_to root_path do %>
-          <%= image_tag "facebook.png" %>
-        <% end %>
+    <div class="menu-navbar">
+      <div style="padding: 26px; margin-top: 24px">
+        <%= link_to "Qui suis-je ?", qui_path, style: "color: #1f547a" %>
       </div>
-      <div>
-        <%= link_to root_path do %>
-          <%= image_tag "instagram.png" %>
-        <% end %>
+      <div style="padding: 26px; margin-top: 24px">
+        <%= link_to "Randonnées", hikes_path %>
       </div>
-    </div>
-  </div>
-
-  <div class="menu-navbar">
-    <div class="red-border">
-      <%= link_to "Qui suis-je ?", qui_path %>
-    </div>
-    <div>
-      <%= link_to "Randonnées", hikes_path %>
-    </div>
-    <div>
-      <%= link_to "Animation nature", animation_path %>
-    </div>
-    <div>
-      <%= link_to "Photos", photos_path %>
-    </div>
-    <div>
-      <%= link_to "Tarifs et conditions", tarifs_path %>
-    </div>
-    <div>
-      <%= link_to "Contactez-moi", new_message_path %>
+      <div  style="padding: 26px; margin-top: 24px">
+        <%= link_to "Animation nature", animation_path %>
+      </div>
+      <div  style="padding: 26px; margin-top: 24px">
+        <%= link_to "Photos", photos_path %>
+      </div>
+      <div style="padding: 26px; margin-top: 24px">
+        <%= link_to "Tarifs et conditions", tarifs_path %>
+      </div>
+      <div  style="padding: 26px; margin-top: 24px">
+        <%= link_to "Contactez-moi", new_message_path %>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div style="margin-top: 30px; margin-bottom: 20px">
-    <h4><strong>Simon CAILLEAU</strong></h4>
-    <h5><strong>Outre-Massifs</strong></h5>
-  </div>
+<div class="quibanner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://images.pexels.com/photos/15960057/pexels-photo-15960057.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
   <div class="presentation">
     <div>
-      <%= image_tag "https://images.pexels.com/photos/13452647/pexels-photo-13452647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %>
+      <%= image_tag "portrait-rectangle.png" %>
     </div>
-    <div>
+    <div style="color: white">
+      <div style="margin-top: 14px; margin-bottom: 20px">
+        <h4><strong>Simon CAILLEAU</strong></h4>
+        <h5><strong>Outre-Massifs</strong></h5>
+      </div>
       <p>Amoureux des grands espaces et passionné par la nature depuis longtemps, j'ai décidé d'en faire
       mon métier et de devenir accompagnateur en montagne en 2020. <br> <br>
       J'habite Avignon, camp de base de mes aventures, autour duquel je rayonne pour explorer les

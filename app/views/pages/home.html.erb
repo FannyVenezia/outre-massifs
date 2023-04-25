@@ -30,24 +30,16 @@
 </div>
 
 <div>
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/547115/pexels-photo-547115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
-    <div class="entry" style="margin-left: 6%">
-      <div style="  padding-top: 82px">
-        <h1>Simon Cailleau</h1>
-        <h3>Accompagnateur moyenne montagne</h3>
-        <%= link_to "Réserver", hikes_path, class: "btn btn-flat" %>
-      </div>
+  <video id="background-video" autoplay loop muted>
+    <source src="https://res.cloudinary.com/dsas0wiz2/video/upload/v1682352417/pexels-julien-aldeguer-3933866-1920x1080-24fps_wnid0l.mp4" type="video/mp4">
+  </video>
 
-      <div>
-        <%= image_tag "portrait-circle.png", style: "margin-right: 10%" %>
-      </div>
-    </div>
+  <div class="banner" style="margin-left: 20%; padding-bottom: 320px">
+    <h1>Simon Cailleau</h1>
+    <h3>Accompagnateur moyenne montagne</h3>
+    <%= link_to "Réserver", hikes_path, type: "button", class: "btn btn-flat" %>
   </div>
 </div>
-
-<video id="background-video" autoplay loop muted>
-  <source src="https://res.cloudinary.com/dsas0wiz2/video/upload/v1682352417/pexels-julien-aldeguer-3933866-1920x1080-24fps_wnid0l.mp4" type="video/mp4">
-</video>
 
 <%# <div style="width: 50%">
   <p class="text-justify">Vous voulez découvrir notre beau département du Vaucluse en Provence ? Rien de tel qu'une randonnée

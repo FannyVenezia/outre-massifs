@@ -46,18 +46,26 @@
 </div>
 
 <div class="white-box">
-  <p class="text-justify">Prenez une pause pour découvrir les paysages et curiosités du Vaucluse.
+  <p class="text-justify" style="margin-bottom: 0px">Prenez une pause pour découvrir les paysages et curiosités du Vaucluse.
   Construisons ensemble <strong>la randonnée adaptée à votre niveau et à vos attentes</strong>, venez découvrir l'aventure qui vous
   convient. Suivant la saison, certaines randonnées sont plus adaptées que d'autres pour profiter du paysage.
   A la journée ou à la demi-journée, sur plusieurs jours en étoile ou en itinérance, contactez-moi et construisons
   ensemble votre randonnée.</p>
+
+  <video id="small-video" autoplay loop muted>
+    <source src="https://res.cloudinary.com/dsas0wiz2/video/upload/v1682523739/lac_fcwufp.mp4" type="video/mp4">
+  </video>
 </div>
 
 <div class="white-box">
-  <h1>Randonnées</h1>
-  <% @hikes.each do |hike| %>
-    <%= link_to hike.title, hike_path(hike) %>
-  <% end %>
+  <h3>Liste des randonnées et bivouacs</h3>
+  <div class="list-rando">
+    <% @hikes.each do |hike| %>
+      <div>
+        <p><%= link_to hike.title, hike_path(hike) %></p>
+      </div>
+    <% end %>
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>

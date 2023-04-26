@@ -32,9 +32,9 @@
   }
 }
 
-.red-border {
-  border-bottom: solid 4px rgb(204, 33, 33);
-}
+// .red-border {
+//   border-bottom: solid 4px rgb(204, 33, 33);
+// }
 
 
 .home-body {
@@ -77,12 +77,12 @@
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #670BFF;
+  background: #1f547a;
   transition: background 0.3s ease;
 }
 
 .btn-flat:hover {
-  background: #4D04C4;
+  background: #1f547a;
   color: white;
 }
 

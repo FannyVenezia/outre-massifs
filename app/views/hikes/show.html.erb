@@ -38,7 +38,7 @@
     <h2 style="text-align: center"><%= @hike.title %></h2>
     <h5><%= @hike.description %></h5>
     <div style="text-align: center">
-      <%= image_tag @hike.photo, height: 300, width: 400, crop: :fill %>
+      <%= cl_image_tag @hike.photo.key, height: 300, width: 400, crop: :fill %>
     </div>
   </div>
 </div>

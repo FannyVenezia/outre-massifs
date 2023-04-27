@@ -63,7 +63,7 @@
     <% @hikes.each do |hike| %>
       <div style="margin-bottom: 20px">
         <h3><%= link_to hike.title, hike_path(hike) %></h3>
-        <%= image_tag hike.photo, height: 300, width: 400, crop: :fill %>
+        <%= cl_image_tag hike.photo.key, height: 300, width: 400, crop: :fill %>
       </div>
     <% end %>
   </div>

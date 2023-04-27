@@ -40,6 +40,9 @@
     <div style="text-align: center">
       <%= cl_image_tag @hike.photo.key, height: 300, width: 400, crop: :fill %>
     </div>
+    <div style="text-align: center; margin-top: 20px">
+      <%= link_to "Réserver", new_reservation_path, type: "button", class: "btn btn-flat" %>
+    </div>
   </div>
 </div>
 

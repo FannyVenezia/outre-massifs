@@ -1,0 +1,53 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+@font-face {
+  font-family: 'Smoothy-Rsz-Regular';
+  src: font-url('/assets/FontsFree-Net-Smoothy-Rsz-Regular.ttf')
+}
+
+h1 {
+  font-family: 'Smoothy-Rsz-Regular';
+}
+
+h2 {
+  font-family: 'Smoothy-Rsz-Regular';
+}
+
+h3 {
+  font-family: 'Smoothy-Rsz-Regular';
+}
+
+h4 {
+  font-family: 'Smoothy-Rsz-Regular';
+}
+
+h5 {
+  font-family: 'Smoothy-Rsz-Regular';
+}
+
+h6 {
+  font-family: 'Smoothy-Rsz-Regular';
+}
+
+p {
+  font-family: 'Smoothy-Rsz-Regular';
+}
+
+a {
+  font-family: 'Smoothy-Rsz-Regular';
+}
+
+body {
+  font-family: 'Smoothy-Rsz-Regular';
+}

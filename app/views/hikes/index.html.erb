@@ -63,6 +63,7 @@
     <% @hikes.each do |hike| %>
       <div>
         <p><%= link_to hike.title, hike_path(hike) %></p>
+        <%= cl_image_tag hike.photo.key, height: 300, width: 400, crop: :fill %>
       </div>
     <% end %>
   </div>

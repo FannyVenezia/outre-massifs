@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: 'Smoothy-Rsz-Regular';
-  src: font-url('/assets/FontsFree-Net-Smoothy-Rsz-Regular.ttf')
+  src: font-url( asset_path("FontsFree-Net-Smoothy-Rsz-Regular.ttf") );
 }
 
 h1 {

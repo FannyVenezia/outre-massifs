@@ -39,51 +39,56 @@
   <div class="banner" style="padding: 200px 0; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/1292006/pexels-photo-1292006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
     <div class="container">
       <h1>L'éducation à l'environnement</h1>
-      <p>Animations nature</p>
+      <h2>Animations nature</h2>
       <%= link_to "Partagez avec moi vos envies", hikes_path, type: "button", class: "btn btn-flat" %>
     </div>
   </div>
 </div>
 
-<div class="container">
+<div class="white-box">
    <div>
-      <p>Je propose des animations nature sur diverses thématiques en fonction des saisons.
-      Des activités ludiques en extérieur pour découvrir la nature.</p>
+      <h4>Je propose des animations nature sur diverses thématiques en fonction des saisons.
+      Des activités ludiques en extérieur pour découvrir la nature.</h4>
+
+      <video id="small-video" autoplay loop muted>
+        <source src="https://res.cloudinary.com/dsas0wiz2/video/upload/v1682605140/paysage_cp5c6u.mp4" type="video/mp4">
+      </video>
     </div>
 </div>
 
-<div class="container">
+<div class="big-white-box">
   <div class="flexbox-animation">
     <div>
       <%= image_tag "https://images.pexels.com/photos/5036722/pexels-photo-5036722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %>
     </div>
 
     <div>
-      <p>« L'éducation à l'environnement est une éducation civique qui a pour but, sans a priori ni dogmatisme, de
+      <h5>« L'éducation à l'environnement est une éducation civique qui a pour but, sans a priori ni dogmatisme, de
       sensibiliser tous les publics et à tous les âges et faire réfléchir avec raison aux choix de sociétés.
       C'est un acte engageant par lequel l'éducateur, invite les personnes qu'il côtoie à être dans la nature, à vivre
       cet environnement dans sa complexité, à le toucher, le sentir, le parcourir, l'imaginer, l'expérimenter, le penser et le
-      réfléchir, le construire, le modifier ou le conserver...»</p>
+      réfléchir, le construire, le modifier ou le conserver...»</h5>
     </div>
   </div>
 </div>
 
-<div class="container">
+<div class="big-white-box">
   <div class="flexbox-animation">
     <div>
-      <p>A la découverte des oiseaux <br>
-      Le monde des petites bêtes<br>
-      Les animaux de la forêt<br>
-      La vie de la montagne<br>
-      Veillée nocturne<br>
-      Orientation et jeux de pistes<br>
-      La formation de nos montagnes</p>
+      <h5>A la découverte des oiseaux <br> <br>
+      Le monde des petites bêtes<br> <br>
+      Les animaux de la forêt<br> <br>
+      La vie de la montagne<br> <br>
+      Veillée nocturne<br> <br>
+      Orientation et jeux de pistes<br> <br>
+      La formation de nos montagnes</h5>
+      <%= link_to "Contactez-moi pour plus d'infos !", new_message_path, type: "button", class: "btn btn-flat", style: "margin-top: 22px" %>
     </div>
 
     <div>
-      <div>
+      <div style="margin-top: 50px; margin-left: 50px">
         <%= image_tag "https://images.pexels.com/photos/14740814/pexels-photo-14740814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" %>
-    </div>
+      </div>
     </div>
   </div>
 </div>

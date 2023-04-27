@@ -35,19 +35,19 @@
 
 <div class="blue-box">
   <div class="form">
-    <p class="text-justify">Réserver une rando maintenant !</p>
+    <h3 class="text-justify">Réserver une rando maintenant !</h3>
 
     <%= simple_form_for @reservation do |f| %>
       <div>
         <div>
-          <%= f.input :name, prompt: "Nom de la randonnée", input_html: {data: { controller: "tom-select"}} %>
+          <%= f.input :name, placeholder: "Nom de la randonnée", label: false %>
         </div>
         <div>
           <%= f.input :attendant, placeholder: "Nombre de personnes", label: false %>
         </div>
       </div>
       <%= f.input :text, placeholder: "Commentaire", label: false %>
-      <%= f.submit "Réserver !" %>
+      <%= f.submit "Réserver :)" %>
     <% end %>
   </div>
 </div>

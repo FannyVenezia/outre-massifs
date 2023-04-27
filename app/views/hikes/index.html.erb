@@ -40,17 +40,17 @@
 
   <div class="banner" style="margin-left: 20%; padding-bottom: 400px">
     <h1>Les randonnées</h1>
-    <h3>En Provence ou ailleurs</h3>
+    <h2>En Provence ou ailleurs</h2>
     <%= link_to "Réserver", new_reservation_path, type: "button", class: "btn btn-flat" %>
   </div>
 </div>
 
 <div class="white-box">
-  <p class="text-justify" style="margin-bottom: 0px">Prenez une pause pour découvrir les paysages et curiosités du Vaucluse.
+  <h5 class="text-justify" style="margin-bottom: 0px">Prenez une pause pour découvrir les paysages et curiosités du Vaucluse.
   Construisons ensemble <strong>la randonnée adaptée à votre niveau et à vos attentes</strong>, venez découvrir l'aventure qui vous
   convient. Suivant la saison, certaines randonnées sont plus adaptées que d'autres pour profiter du paysage.
-  A la journée ou à la demi-journée, sur plusieurs jours en étoile ou en itinérance, contactez-moi et construisons
-  ensemble votre randonnée.</p>
+  A la journée ou à la demi-journée, sur plusieurs jours en étoile ou en itinérance, contactez-moi et <strong>construisons
+  ensemble votre randonnée</strong>.</h5>
 
   <video id="small-video" autoplay loop muted>
     <source src="https://res.cloudinary.com/dsas0wiz2/video/upload/v1682523739/lac_fcwufp.mp4" type="video/mp4">
@@ -58,11 +58,11 @@
 </div>
 
 <div class="white-box">
-  <h3>Liste des randonnées et bivouacs</h3>
-  <div class="list-rando">
+  <h1 style="text-align: center">Liste des randonnées et bivouacs</h1>
+  <div class="list-rando" style="text-align: center">
     <% @hikes.each do |hike| %>
-      <div>
-        <p><%= link_to hike.title, hike_path(hike) %></p>
+      <div style="margin-bottom: 20px">
+        <h3><%= link_to hike.title, hike_path(hike) %></h3>
         <%= cl_image_tag hike.photo.key, height: 300, width: 400, crop: :fill %>
       </div>
     <% end %>

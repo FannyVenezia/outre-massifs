@@ -1,9 +1,51 @@
 .flexbox-animation {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   img {
-    height: 76vh;
+    height: 50vh;
   }
   margin-left: 4%;
   margin-right: 4%;
+}
+
+.flexbox-animation h5 {
+  margin-top: 10%;
+  text-align: justify;
+}
+
+@font-face {
+  font-family: 'Smoothy-Rsz-Regular';
+  src: url('/assets/FontsFree-Net-Smoothy-Rsz-Regular.ttf')
+}
+
+h1 {
+  font-family: 'Smoothy-Rsz-Regular';
+}
+
+h2 {
+  font-family: 'Smoothy-Rsz-Regular';
+}
+
+h3 {
+  font-family: 'Smoothy-Rsz-Regular';
+}
+
+h4 {
+  font-family: 'Smoothy-Rsz-Regular';
+}
+
+h5 {
+  font-family: 'Smoothy-Rsz-Regular';
+}
+
+h6 {
+  font-family: 'Smoothy-Rsz-Regular';
+}
+
+p {
+  font-family: 'Smoothy-Rsz-Regular';
+}
+
+a {
+  font-family: 'Smoothy-Rsz-Regular';
 }

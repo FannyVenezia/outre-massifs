@@ -11,6 +11,7 @@
   top: 0;
   padding-bottom: 12px;
 }
+
 .centered-element {
   text-align: center;
   img {
@@ -23,6 +24,7 @@
   padding-bottom: 14px;
   display: flex;
   justify-content: space-around;
+  font-size: 20px;
   a {
     text-decoration: none;
     color: black;
@@ -55,12 +57,19 @@
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+  font-size: 48px;
   font-weight: bold;
 }
 
 .banner h3 {
   font-size: 20px;
+  color: white;
+  // opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.banner h2 {
+  font-size: 26px;
   color: white;
   // opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -79,6 +88,8 @@
   border-radius: 4px;
   background: #1f547a;
   transition: background 0.3s ease;
+  font-family: 'Smoothy-Rsz-Regular';
+  font-size: 20px;
 }
 
 .btn-flat:hover {

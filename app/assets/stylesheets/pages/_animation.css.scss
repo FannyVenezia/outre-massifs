@@ -1,0 +1,32 @@
+.flexbox-animation {
+  display: flex;
+  gap: 40px;
+  img {
+    height: 50vh;
+  }
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.flexbox-animation h5 {
+  margin-top: 10%;
+  text-align: justify;
+}
+
+// @media screen and (max-width: 900px) {
+//   .flexbox-animation {
+//     display: none;
+//   }
+// }
+
+// @media(max-width: 992px) {
+//   .small-logo {
+//         display: none;
+//       }
+// }
+
+// @media(max-width: 768px) {
+//   .flexbox-animation {
+//         display: none;
+//       }
+// }

@@ -5,8 +5,20 @@
   margin-left: 2%;
   img {
     border-radius: 8px;
-    height: 400px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media(max-width: 992px) {
+  .grid-phot {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .grid-phot {
+    grid-template-columns: 1fr;
   }
 }
 

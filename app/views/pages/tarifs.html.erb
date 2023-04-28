@@ -1,78 +1,80 @@
-<section class="section-1">
-  <header>
-    <div>
-      <div class="quipage">
-        <div class="small-logo">
-          <%= link_to root_path do %>
-            <%= image_tag "logo.png" %>
-          <% end %>
-        </div>
+<div class="whole-container">
+  <section class="section-1">
+    <header>
+      <div>
+        <div class="quipage">
+          <div class="small-logo">
+            <%= link_to root_path do %>
+              <%= image_tag "logo.png" %>
+            <% end %>
+          </div>
 
-        <div class="menu-navbar">
-          <div class="centered-nev-item">
-            <%= link_to "Qui suis-je ?", qui_path %>
-          </div>
-          <div class="centered-nev-item">
-            <%= link_to "Randonnées", hikes_path %>
-          </div>
-          <div class="centered-nev-item">
-            <%= link_to "Animation nature", animation_path %>
-          </div>
-          <div class="centered-nev-item">
-            <%= link_to "Photos", photos_path %>
-          </div>
-          <div class="centered-nev-item">
-            <%= link_to "Tarifs et conditions", tarifs_path, style: "color: #1f547a" %>
-          </div>
-          <div class="centered-nev-item">
-            <%= link_to "Contactez-moi", new_message_path %>
+          <div class="menu-navbar">
+            <div class="centered-nev-item">
+              <%= link_to "Qui suis-je ?", qui_path%>
+            </div>
+            <div class="centered-nev-item">
+              <%= link_to "Randonnées", hikes_path %>
+            </div>
+            <div class="centered-nev-item">
+              <%= link_to "Animation nature", animation_path %>
+            </div>
+            <div class="centered-nev-item">
+              <%= link_to "Photos", photos_path %>
+            </div>
+            <div class="centered-nev-item">
+              <%= link_to "Tarifs et conditions", tarifs_path, style: "color: #1f547a" %>
+            </div>
+            <div class="centered-nev-item">
+              <%= link_to "Contactez-moi", new_message_path %>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-</section>
+    </header>
+  </section>
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-<script>
-  $(document).ready(function(){
-    $(window).on('scroll', function(){
-      if ($(window).scrollTop()) {
-                $("header").addClass('no-background');
-                $(".centered-nev-item").addClass('killmar');
-      }else{
-        $("header").removeClass('no-background');
-        $(".centered-nev-item").removeClass('killmar');
-      }
+  <script>
+    $(document).ready(function(){
+      $(window).on('scroll', function(){
+        if ($(window).scrollTop()) {
+                  $("header").addClass('no-background');
+                  $(".centered-nev-item").addClass('killmar');
+        }else{
+          $("header").removeClass('no-background');
+          $(".centered-nev-item").removeClass('killmar');
+        }
+      });
     });
-  });
-</script>
+  </script>
 
-<div>
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/15499497/pexels-photo-15499497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
-    <div class="container">
-      <h1>Les tarifs</h1>
-      <h2>Mon offre pour les aventures</h2>
-      <%= link_to "Posez-moi vos questions !", new_message_path, type: "button", class: "btn btn-flat" %>
+  <div>
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/15499497/pexels-photo-15499497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+      <div class="container">
+        <h1>Les tarifs</h1>
+        <h2>Mon offre pour les aventures</h2>
+        <%= link_to "Posez-moi vos questions !", new_message_path, type: "button", class: "btn btn-flat" %>
+      </div>
     </div>
   </div>
-</div>
 
-<div>
-  <div class="blue-box">
-    <h3>Inscription obligatoire pour toutes les randonnées auprès de Simon. <br> <br> </h3>
-    <h4>Randonnée à la journée : 30€/personne <br> <br>
-    Randonnée à la demi-journée : 15€/personne <br> <br>
-    Randonnée coucher de soleil : 25€/personne</h4>
-  </div>
+  <div>
+    <div class="blue-box">
+      <h3>Inscription obligatoire pour toutes les randonnées auprès de Simon. <br> <br> </h3>
+      <h4>Randonnée à la journée : 30€/personne <br> <br>
+      Randonnée à la demi-journée : 15€/personne <br> <br>
+      Randonnée coucher de soleil : 25€/personne</h4>
+    </div>
 
-  <div class="blue-box">
-    <h5><strong>Départ assuré à partir de 6 personnes.</strong> <br> <br>
-    Possibilité de départ à moins de 6 personnes - me contacter.
-    La randonnée est assurée par un accompagnateur en montagne diplômé d'État. Celui-ci se réserve le droit de modifier
-    tout ou partie de l'itinéraire pour des raisons de sécurité indépendantes de sa volonté. Il se réserve également le droit
-    de refuser le départ à tout participant ne disposant pas du matériel, des aptitudes ou du comportement adéquats. <br> <br>
-    Toute réservation annulée moins de 24h avant sa date de début est due dans son intégralité.</h5>
+    <div class="blue-box">
+      <h5><strong>Départ assuré à partir de 6 personnes.</strong> <br> <br>
+      Possibilité de départ à moins de 6 personnes - me contacter.
+      La randonnée est assurée par un accompagnateur en montagne diplômé d'État. Celui-ci se réserve le droit de modifier
+      tout ou partie de l'itinéraire pour des raisons de sécurité indépendantes de sa volonté. Il se réserve également le droit
+      de refuser le départ à tout participant ne disposant pas du matériel, des aptitudes ou du comportement adéquats. <br> <br>
+      Toute réservation annulée moins de 24h avant sa date de début est due dans son intégralité.</h5>
+    </div>
   </div>
 </div>
